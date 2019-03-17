@@ -1,5 +1,17 @@
 import MiddlewareRegistry, { GLOBAL_CONTEXT } from './MiddlewareRegistry';
-import { compose } from 'redux';
+
+// Borrowed functionality from redux
+function compose(...funcs) {
+  if (funcs.length === 0) {
+    return arg => arg
+  }
+
+  if (funcs.length === 1) {
+    return funcs[0]
+  }
+
+  return funcs.reduce((a, b) => (...args) => a(b(...args)))
+}
 
 const buildBaseContainer = () => ({
   /**
