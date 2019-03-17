@@ -1,7 +1,8 @@
 {
   "name": "@silverstripe/react-injector",
   "description": "A dependency injection layer for sharing components between React applications",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "main": "dist/injector.js",
   "scripts": {
     "dev": "webpack",
     "watch": "webpack --watch",
