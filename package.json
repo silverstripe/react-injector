@@ -20,9 +20,10 @@
   "devDependencies": {
     "@silverstripe/webpack-config": "^0.12.0",
     "babel-jest": "^24.1.0",
-    "jest-cli": "^24.1.0",
     "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.9.1"
+    "enzyme-adapter-react-16": "^1.9.1",
+    "jest-cli": "^24.1.0",
+    "mime": "^1.4.1"
   },
   "jest": {
     "roots": [
